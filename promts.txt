@@ -1,0 +1,20 @@
+Давай создадим отдельный скрипт для обработки таблицы products,
+если нет колонок в таблице то создаем их prod_name,prod_price_new,prod_price_old,prod_article,prod_img_url
+задача создание таблицы с товарами:
+
+1.переходим по ссылке из столбца url
+2.если есть div class="b-title", из него достаем содержимое <h1>, запись делаем в prod_name
+3. <div class="b-price__value" itemprop="price" content=""> содержимое content пишем в prod_price_new
+4. <div class="b-price__sale"> достаем цифру из блока пишем в prod_price_old
+5. внутри <div class="b-card-detail__code"> находим <span> артикул пишем в prod_article
+6. <img class="sp-image" src=""> значение src пишем в prod_img_url
+
+
+Давай доработаем наши скрипты и таблицу products.
+В таблицу попали не только url товаров но и url категорий, пагинаций и прочее. 
+1. создадим если нет в таблице products, колонку prod_type
+2. в скрипт process_products.py добавим определение что перед нами url товара по следующим критериям:
+ если url заканчивается на .html то в prod_type пишем product, иначе пишем not_prod
+3. при обработке process_products.py будет проверять prod_type если product, тогда обрабатываем и делаем записи в столбцы prod_name,prod_price_new,prod_price_old,prod_article,prod_img_url, а иначе пропускаем и не считаем в цикле обработки
+
+прошу присылай сразу полные версии скриптов, пожалуйста, чтобы я смог их просто копировать и вставлять в существующие файлы, так будет удобно

@@ -1,0 +1,513 @@
+2025-12-19 00:08:52,863 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 00:08:52,895 - src.product_processor - INFO - ✅ Добавлена колонка: prod_name
+2025-12-19 00:08:52,896 - src.product_processor - INFO - ✅ Добавлена колонка: prod_price_new
+2025-12-19 00:08:52,896 - src.product_processor - INFO - ✅ Добавлена колонка: prod_price_old
+2025-12-19 00:08:52,897 - src.product_processor - INFO - ✅ Добавлена колонка: prod_article
+2025-12-19 00:08:52,897 - src.product_processor - INFO - ✅ Добавлена колонка: prod_img_url
+2025-12-19 00:08:52,898 - src.product_processor - INFO - ✅ Добавлена колонка: parsed_at
+2025-12-19 00:08:52,901 - src.product_processor - INFO - ✅ Добавлена колонка: parse_status
+2025-12-19 00:08:52,901 - src.product_processor - INFO - ✅ Добавлена колонка: parse_error
+2025-12-19 00:08:52,903 - src.product_processor - INFO - ✅ Добавлено 8 новых колонок в таблицу products
+2025-12-19 00:08:52,915 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 00:11:04,420 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 00:11:04,431 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 00:11:04,432 - __main__ - INFO - 🚀 Начинаю обработку 20 товаров
+2025-12-19 00:11:04,432 - __main__ - INFO - ⏱️  Задержка между запросами: 2.0 сек
+2025-12-19 00:11:04,436 - src.product_processor - INFO - 🔍 Найдено 20 товаров для обработки
+2025-12-19 00:11:04,436 - src.product_processor - INFO - [1/20] Обработка товара 2: https://hello54.ru/catalog/zashchitnye-plenki-i-stekla/
+2025-12-19 00:11:19,926 - src.product_processor - WARNING - ⚠️ Ошибка парсинга товара 2: Ошибка сети: HTTPSConnectionPool(host='hello54.ru', port=443): Read timed out. (read timeout=15)
+2025-12-19 00:11:21,927 - src.product_processor - INFO - [2/20] Обработка товара 3: https://hello54.ru/catalog/stekla/
+2025-12-19 00:11:37,370 - src.product_processor - WARNING - ⚠️ Ошибка парсинга товара 3: Ошибка сети: HTTPSConnectionPool(host='hello54.ru', port=443): Read timed out. (read timeout=15)
+2025-12-19 00:11:39,372 - src.product_processor - INFO - [3/20] Обработка товара 4: https://hello54.ru/catalog/vneshnie-akkumulyatory/
+2025-12-19 00:11:53,431 - src.product_processor - WARNING - ⚠️ Ошибка парсинга товара 4: Ошибка сети: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+2025-12-19 00:11:55,446 - src.product_processor - INFO - [4/20] Обработка товара 5: https://hello54.ru/catalog/kabeli-razemy-perekhodniki/
+2025-12-19 00:11:58,342 - src.product_processor - INFO - [5/20] Обработка товара 6: https://hello54.ru/catalog/naushniki-i-bluetooth-garnitury/
+2025-12-19 00:12:00,726 - src.product_processor - INFO - [6/20] Обработка товара 7: https://hello54.ru/catalog/nakopiteli-dannykh/
+2025-12-19 00:12:04,751 - src.product_processor - INFO - [7/20] Обработка товара 8: https://hello54.ru/catalog/zaryadnye-ustroystva-i-adaptery/
+2025-12-19 00:12:07,133 - src.product_processor - INFO - [8/20] Обработка товара 9: https://hello54.ru/catalog/chasy-i-braslety/
+2025-12-19 00:12:09,536 - src.product_processor - INFO - [9/20] Обработка товара 10: https://hello54.ru/catalog/akustika/
+2025-12-19 00:12:11,880 - src.product_processor - INFO - [10/20] Обработка товара 11: https://hello54.ru/catalog/avtoaksessuary/
+2025-12-19 00:12:14,809 - src.product_processor - INFO - [11/20] Обработка товара 12: https://hello54.ru/catalog/akkumulyatory/
+2025-12-19 00:12:17,844 - src.product_processor - INFO - [12/20] Обработка товара 13: https://hello54.ru/catalog/aksessuary-dlya-naushnikov/
+2025-12-19 00:12:21,947 - src.product_processor - INFO - [13/20] Обработка товара 14: https://hello54.ru/catalog/aksessuary-dlya-noutbukov/
+2025-12-19 00:12:25,691 - src.product_processor - INFO - [14/20] Обработка товара 15: https://hello54.ru/catalog/aksessuary-dlya-planshetov/
+2025-12-19 00:12:28,592 - src.product_processor - INFO - [15/20] Обработка товара 16: https://hello54.ru/catalog/aksessuary-dlya-chasov-i-brasletov/
+2025-12-19 00:12:32,978 - src.product_processor - INFO - [16/20] Обработка товара 17: https://hello54.ru/catalog/bytovaya-tekhnika/
+2025-12-19 00:12:35,187 - src.product_processor - INFO - [17/20] Обработка товара 18: https://hello54.ru/catalog/vsye-dlya-selfi/
+2025-12-19 00:12:38,157 - src.product_processor - INFO - [18/20] Обработка товара 19: https://hello54.ru/catalog/detskie-igrushki-i-igry/
+2025-12-19 00:12:41,148 - src.product_processor - INFO - [19/20] Обработка товара 20: https://hello54.ru/catalog/zashchita-na-kameru/
+2025-12-19 00:12:45,106 - src.product_processor - INFO - [20/20] Обработка товара 1: https://hello54.ru/catalog/
+2025-12-19 00:12:45,246 - src.product_processor - INFO - ✅ Обработка завершена: 17 успешно, 3 с ошибками
+2025-12-19 00:12:45,255 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 00:13:05,182 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 00:13:05,193 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 00:13:05,194 - __main__ - INFO - 🚀 Начинаю обработку 20 товаров
+2025-12-19 00:13:05,194 - __main__ - INFO - ⏱️  Задержка между запросами: 2.0 сек
+2025-12-19 00:13:05,197 - src.product_processor - INFO - 🔍 Найдено 20 товаров для обработки
+2025-12-19 00:13:05,197 - src.product_processor - INFO - [1/20] Обработка товара 2: https://hello54.ru/catalog/zashchitnye-plenki-i-stekla/
+2025-12-19 00:13:08,589 - src.product_processor - INFO - [2/20] Обработка товара 3: https://hello54.ru/catalog/stekla/
+2025-12-19 00:13:11,850 - src.product_processor - INFO - [3/20] Обработка товара 4: https://hello54.ru/catalog/vneshnie-akkumulyatory/
+2025-12-19 00:13:14,809 - src.product_processor - INFO - [4/20] Обработка товара 5: https://hello54.ru/catalog/kabeli-razemy-perekhodniki/
+2025-12-19 00:13:17,270 - src.product_processor - INFO - [5/20] Обработка товара 6: https://hello54.ru/catalog/naushniki-i-bluetooth-garnitury/
+2025-12-19 00:13:19,652 - src.product_processor - INFO - [6/20] Обработка товара 7: https://hello54.ru/catalog/nakopiteli-dannykh/
+2025-12-19 00:13:22,005 - src.product_processor - INFO - [7/20] Обработка товара 8: https://hello54.ru/catalog/zaryadnye-ustroystva-i-adaptery/
+2025-12-19 00:13:25,715 - src.product_processor - INFO - [8/20] Обработка товара 9: https://hello54.ru/catalog/chasy-i-braslety/
+2025-12-19 00:13:28,117 - src.product_processor - INFO - [9/20] Обработка товара 10: https://hello54.ru/catalog/akustika/
+2025-12-19 00:13:30,480 - src.product_processor - INFO - [10/20] Обработка товара 11: https://hello54.ru/catalog/avtoaksessuary/
+2025-12-19 00:13:32,856 - src.product_processor - INFO - [11/20] Обработка товара 12: https://hello54.ru/catalog/akkumulyatory/
+2025-12-19 00:13:35,299 - src.product_processor - INFO - [12/20] Обработка товара 13: https://hello54.ru/catalog/aksessuary-dlya-naushnikov/
+2025-12-19 00:13:37,674 - src.product_processor - INFO - [13/20] Обработка товара 14: https://hello54.ru/catalog/aksessuary-dlya-noutbukov/
+2025-12-19 00:13:40,220 - src.product_processor - INFO - [14/20] Обработка товара 15: https://hello54.ru/catalog/aksessuary-dlya-planshetov/
+2025-12-19 00:13:42,593 - src.product_processor - INFO - [15/20] Обработка товара 16: https://hello54.ru/catalog/aksessuary-dlya-chasov-i-brasletov/
+2025-12-19 00:13:44,960 - src.product_processor - INFO - [16/20] Обработка товара 17: https://hello54.ru/catalog/bytovaya-tekhnika/
+2025-12-19 00:13:47,159 - src.product_processor - INFO - [17/20] Обработка товара 18: https://hello54.ru/catalog/vsye-dlya-selfi/
+2025-12-19 00:13:49,552 - src.product_processor - INFO - [18/20] Обработка товара 19: https://hello54.ru/catalog/detskie-igrushki-i-igry/
+2025-12-19 00:13:51,946 - src.product_processor - INFO - [19/20] Обработка товара 20: https://hello54.ru/catalog/zashchita-na-kameru/
+2025-12-19 00:13:54,333 - src.product_processor - INFO - [20/20] Обработка товара 1: https://hello54.ru/catalog/
+2025-12-19 00:13:54,479 - src.product_processor - INFO - ✅ Обработка завершена: 20 успешно, 0 с ошибками
+2025-12-19 00:13:54,486 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 00:29:48,139 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 00:29:48,153 - src.product_processor - INFO - ✅ Добавлена колонка: prod_type
+2025-12-19 00:29:48,154 - src.product_processor - INFO - ✅ Добавлено 1 новых колонок в таблицу products
+2025-12-19 00:29:48,156 - src.product_processor - INFO - 🔍 Найдено 743 URL без классификации
+2025-12-19 00:29:48,216 - src.product_processor - INFO - ✅ Классификация URL завершена:
+2025-12-19 00:29:48,216 - src.product_processor - INFO -    product: 635 URL
+2025-12-19 00:29:48,216 - src.product_processor - INFO -    not_prod: 108 URL
+2025-12-19 00:29:48,224 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 00:30:41,390 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 00:30:41,402 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 00:30:41,403 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 00:30:41,404 - __main__ - INFO - 🚀 Начинаю обработку 10 записей
+2025-12-19 00:30:41,404 - __main__ - INFO - ⏱️  Задержка между запросами: 2.0 сек
+2025-12-19 00:30:41,404 - __main__ - INFO - 🔍 Режим: обработка ТОЛЬКО товаров (prod_type='product')
+2025-12-19 00:30:41,406 - src.product_processor - INFO - 📊 Для обработки выбрано: 10 записей (product: 10)
+2025-12-19 00:30:41,407 - src.product_processor - INFO - 🔍 Найдено 10 записей для обработки
+2025-12-19 00:30:41,407 - src.product_processor - INFO - [1/10] Обработка ТОВАРА 48: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:30:44,224 - src.product_processor - INFO - [2/10] Обработка ТОВАРА 49: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:30:46,641 - src.product_processor - INFO - [3/10] Обработка ТОВАРА 50: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:30:49,066 - src.product_processor - INFO - [4/10] Обработка ТОВАРА 51: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:30:51,483 - src.product_processor - INFO - [5/10] Обработка ТОВАРА 52: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:30:53,920 - src.product_processor - INFO - [6/10] Обработка ТОВАРА 53: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:30:56,361 - src.product_processor - INFO - [7/10] Обработка ТОВАРА 54: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:30:58,788 - src.product_processor - INFO - [8/10] Обработка ТОВАРА 55: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:31:01,217 - src.product_processor - INFO - [9/10] Обработка ТОВАРА 56: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:31:03,690 - src.product_processor - INFO - [10/10] Обработка ТОВАРА 47: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:31:04,209 - src.product_processor - INFO - ✅ Обработка завершена: 10 успешно, 0 пропущено, 0 с ошибками
+2025-12-19 00:31:04,217 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 00:34:53,749 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 00:34:53,761 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 00:34:53,763 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 00:34:53,763 - __main__ - INFO - 🚀 Начинаю обработку 10 записей
+2025-12-19 00:34:53,763 - __main__ - INFO - ⏱️  Задержка между запросами: 2.0 сек
+2025-12-19 00:34:53,764 - __main__ - INFO - 🔍 Режим: обработка ТОЛЬКО товаров (prod_type='product')
+2025-12-19 00:34:53,766 - src.product_processor - INFO - 📊 Для обработки выбрано: 10 записей (product: 10)
+2025-12-19 00:34:53,766 - src.product_processor - INFO - 🔍 Найдено 10 записей для обработки
+2025-12-19 00:34:53,766 - src.product_processor - INFO - [1/10] Обработка ТОВАРА 48: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:34:56,579 - src.product_processor - INFO - [2/10] Обработка ТОВАРА 49: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:34:58,992 - src.product_processor - INFO - [3/10] Обработка ТОВАРА 50: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:35:01,401 - src.product_processor - INFO - [4/10] Обработка ТОВАРА 51: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:35:03,879 - src.product_processor - INFO - [5/10] Обработка ТОВАРА 52: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:35:06,329 - src.product_processor - INFO - [6/10] Обработка ТОВАРА 53: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:35:08,793 - src.product_processor - INFO - [7/10] Обработка ТОВАРА 54: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:35:11,224 - src.product_processor - INFO - [8/10] Обработка ТОВАРА 55: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:35:13,693 - src.product_processor - INFO - [9/10] Обработка ТОВАРА 56: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:35:16,155 - src.product_processor - INFO - [10/10] Обработка ТОВАРА 47: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 00:35:16,623 - src.product_processor - INFO - ✅ Обработка завершена: 10 успешно, 0 пропущено, 0 с ошибками
+2025-12-19 00:35:16,631 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 02:03:57,676 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-19 02:06:10,432 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-19 02:10:58,698 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-19 02:10:58,737 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 02:10:58,749 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 02:10:58,752 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 02:10:58,752 - __main__ - INFO - 🔍 Начинаю обработку 3 записей
+2025-12-19 02:10:58,752 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-19 02:10:58,755 - src.product_processor - INFO - 📊 Для обработки выбрано: 3 записей (product: 3)
+2025-12-19 02:10:58,755 - src.product_processor - INFO - 🔍 Найдено 3 записей для обработки
+2025-12-19 02:10:58,756 - src.product_processor - INFO - [1/3] Обработка ТОВАРА 48: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:11:01,547 - src.product_processor - INFO - [2/3] Обработка ТОВАРА 49: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:11:03,372 - src.product_processor - INFO - [3/3] Обработка ТОВАРА 47: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:11:04,196 - src.product_processor - INFO - ✅ Обработка завершена: 3 успешно, 0 пропущено, 0 с ошибками
+2025-12-19 02:11:04,198 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 02:18:13,224 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium, по умолчанию)
+2025-12-19 02:18:13,262 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 02:18:13,273 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 02:18:13,274 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 02:18:13,283 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 02:21:34,974 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-19 02:21:35,014 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 02:21:35,025 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 02:21:35,027 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 02:21:35,027 - __main__ - INFO - 🔍 Начинаю обработку 3 записей
+2025-12-19 02:21:35,028 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-19 02:21:35,030 - src.product_processor - INFO - 📊 Для обработки выбрано: 3 записей (product: 3)
+2025-12-19 02:21:35,031 - src.product_processor - INFO - 🔍 Найдено 3 записей для обработки
+2025-12-19 02:21:35,031 - src.product_processor - INFO - [1/3] Обработка ТОВАРА 48: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:21:37,905 - src.product_processor - INFO - [2/3] Обработка ТОВАРА 49: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:21:39,820 - src.product_processor - INFO - [3/3] Обработка ТОВАРА 47: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:21:40,654 - src.product_processor - INFO - ✅ Обработка завершена: 3 успешно, 0 пропущено, 0 с ошибками
+2025-12-19 02:21:40,663 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 02:24:30,412 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-19 02:24:30,574 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 02:24:30,585 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 02:24:30,586 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 02:24:30,587 - __main__ - INFO - 🔍 Начинаю обработку 3 записей
+2025-12-19 02:24:30,587 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-19 02:24:30,589 - src.product_processor - INFO - 📊 Для обработки выбрано: 3 записей (product: 3)
+2025-12-19 02:24:30,590 - src.product_processor - INFO - 🔍 Найдено 3 записей для обработки
+2025-12-19 02:24:30,590 - src.product_processor - INFO - [1/3] Обработка ТОВАРА 48: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:24:33,088 - src.product_processor - INFO - [2/3] Обработка ТОВАРА 49: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:24:34,917 - src.product_processor - INFO - [3/3] Обработка ТОВАРА 47: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:24:35,758 - src.product_processor - INFO - ✅ Обработка завершена: 3 успешно, 0 пропущено, 0 с ошибками
+2025-12-19 02:24:35,766 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 02:29:05,019 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-19 02:29:05,056 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 02:29:05,066 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 02:29:05,068 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 02:29:05,068 - __main__ - INFO - 🔍 Начинаю обработку 3 записей
+2025-12-19 02:29:05,068 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-19 02:29:05,071 - src.product_processor - INFO - 📊 Для обработки выбрано: 3 записей (product: 3)
+2025-12-19 02:29:05,071 - src.product_processor - INFO - 🔍 Найдено 3 записей для обработки
+2025-12-19 02:29:05,071 - src.product_processor - INFO - [1/3] Обработка ТОВАРА 48: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:29:17,205 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (blue) (206655), price: 59.4, article: None
+2025-12-19 02:29:18,208 - src.product_processor - INFO - [2/3] Обработка ТОВАРА 49: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:29:18,645 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (green) (206656), price: 59.4, article: None
+2025-12-19 02:29:19,647 - src.product_processor - INFO - [3/3] Обработка ТОВАРА 47: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:29:20,061 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (black) (206661), price: 59.4, article: None
+2025-12-19 02:29:20,062 - src.product_processor - INFO - ✅ Обработка завершена: 3 успешно, 0 пропущено, 0 с ошибками
+2025-12-19 02:29:20,070 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 02:41:08,362 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-19 02:41:08,401 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 02:41:08,412 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 02:41:08,413 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 02:41:08,414 - __main__ - INFO - 🔍 Начинаю обработку 3 записей
+2025-12-19 02:41:08,414 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-19 02:41:08,417 - src.product_processor - INFO - 📊 Для обработки выбрано: 3 записей (product: 3)
+2025-12-19 02:41:08,417 - src.product_processor - INFO - 🔍 Найдено 3 записей для обработки
+2025-12-19 02:41:08,417 - src.product_processor - INFO - [1/3] Обработка ТОВАРА 48: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:41:11,644 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (blue) (206655), price: 59.4, article: None
+2025-12-19 02:41:12,646 - src.product_processor - INFO - [2/3] Обработка ТОВАРА 49: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:41:13,490 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (green) (206656), price: 59.4, article: None
+2025-12-19 02:41:14,491 - src.product_processor - INFO - [3/3] Обработка ТОВАРА 47: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:41:15,841 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (black) (206661), price: 59.4, article: None
+2025-12-19 02:41:15,842 - src.product_processor - INFO - ✅ Обработка завершена: 3 успешно, 0 пропущено, 0 с ошибками
+2025-12-19 02:41:15,851 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 02:48:48,037 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-19 02:48:48,073 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 02:48:48,086 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 02:48:48,087 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 02:48:48,087 - __main__ - INFO - 🔍 Начинаю обработку 2 записей
+2025-12-19 02:48:48,088 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-19 02:48:48,089 - src.product_processor - INFO - 📊 Для обработки выбрано: 2 записей (product: 2)
+2025-12-19 02:48:48,090 - src.product_processor - INFO - 🔍 Найдено 2 записей для обработки
+2025-12-19 02:48:48,090 - src.product_processor - INFO - [1/2] Обработка ТОВАРА 48: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:48:51,457 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (blue) (206655), price: 59.4, article: None
+2025-12-19 02:48:51,470 - src.product_processor - ERROR - ❌ Ошибка обновления товара 48: ОШИБКА:  ошибка синтаксиса (примерное положение: "обновляем")
+LINE 12: ...                       updated_at = NOW()  # Явно обновляем ...
+                                                              ^
+
+2025-12-19 02:48:52,471 - src.product_processor - INFO - [2/2] Обработка ТОВАРА 47: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:48:53,303 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (black) (206661), price: 59.4, article: None
+2025-12-19 02:48:53,304 - src.product_processor - ERROR - ❌ Ошибка обновления товара 47: ОШИБКА:  ошибка синтаксиса (примерное положение: "обновляем")
+LINE 12: ...                       updated_at = NOW()  # Явно обновляем ...
+                                                              ^
+
+2025-12-19 02:48:53,304 - src.product_processor - INFO - ✅ Обработка завершена: 0 успешно, 0 пропущено, 2 с ошибками
+2025-12-19 02:48:53,306 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-19 02:53:05,293 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-19 02:53:05,329 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-19 02:53:05,340 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-19 02:53:05,342 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-19 02:53:05,342 - __main__ - INFO - 🔍 Начинаю обработку 2 записей
+2025-12-19 02:53:05,342 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-19 02:53:05,345 - src.product_processor - INFO - 📊 Для обработки выбрано: 2 записей (product: 2)
+2025-12-19 02:53:05,345 - src.product_processor - INFO - 🔍 Найдено 2 записей для обработки
+2025-12-19 02:53:05,345 - src.product_processor - INFO - [1/2] Обработка ТОВАРА 48: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:53:10,924 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (blue) (206655), price: 59.4, article: None
+2025-12-19 02:53:11,927 - src.product_processor - INFO - [2/2] Обработка ТОВАРА 47: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-19 02:53:12,818 - src.product_processor - INFO - DEBUG: Найдено - name: Картхолдер - CH01 футляр для карт на клеевой основе (black) (206661), price: 59.4, article: None
+2025-12-19 02:53:12,820 - src.product_processor - INFO - ✅ Обработка завершена: 2 успешно, 0 пропущено, 0 с ошибками
+2025-12-19 02:53:12,830 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-22 23:32:37,610 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-22 23:32:37,784 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-22 23:32:37,794 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-22 23:32:37,796 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-22 23:32:37,796 - __main__ - INFO - 🔍 Начинаю обработку 4 записей
+2025-12-22 23:32:37,797 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-22 23:32:37,813 - src.product_processor - INFO - 📊 Для обработки выбрано: 4 записей (product: 4)
+2025-12-22 23:32:37,814 - src.product_processor - INFO - 🔍 Найдено 4 записей для обработки
+2025-12-22 23:32:37,814 - src.product_processor - INFO - [1/4] Обработка ТОВАРА 50: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-22 23:32:40,437 - src.product_processor - INFO - [2/4] Обработка ТОВАРА 51: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-22 23:32:42,311 - src.product_processor - INFO - [3/4] Обработка ТОВАРА 52: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-22 23:32:44,248 - src.product_processor - INFO - [4/4] Обработка ТОВАРА 49: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-22 23:32:45,244 - src.product_processor - INFO - ✅ Обработка завершена: 4 успешно, 0 пропущено, 0 с ошибками
+2025-12-22 23:32:45,270 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-23 01:48:34,408 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-23 01:48:34,446 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-23 01:48:34,461 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-23 01:48:34,462 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-23 01:48:34,462 - __main__ - INFO - 🔍 Начинаю обработку 4 записей
+2025-12-23 01:48:34,464 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-23 02:13:27,929 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-23 02:13:27,964 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-23 02:13:27,974 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-23 02:13:27,975 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-23 02:13:27,976 - __main__ - INFO - 🔍 Начинаю обработку 4 записей
+2025-12-23 02:13:27,976 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-23 02:16:50,763 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-23 02:16:50,798 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-23 02:16:50,808 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-23 02:16:50,810 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-23 02:16:50,810 - __main__ - INFO - 🔍 Начинаю обработку 4 записей
+2025-12-23 02:16:50,811 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-23 02:16:50,815 - src.product_processor - INFO - 📊 Для обработки выбрано: 4 записей (product: 4)
+2025-12-23 02:16:50,815 - src.product_processor - INFO - 🔍 Найдено 4 записей для обработки
+2025-12-23 02:16:50,816 - src.product_processor - INFO - [1/4] Обработка ТОВАРА 54: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-23 02:16:54,393 - src.product_processor - INFO - [2/4] Обработка ТОВАРА 55: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-23 02:16:57,019 - src.product_processor - INFO - [3/4] Обработка ТОВАРА 56: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-23 02:16:58,823 - src.product_processor - INFO - [4/4] Обработка ТОВАРА 53: https://hello54.ru/catalog/kartkholder-ch01-futlyar-dlya-kar...
+2025-12-23 02:17:00,817 - src.product_processor - INFO - ✅ Обработка завершена: 4 успешно, 0 пропущено, 0 с ошибками
+2025-12-23 02:17:00,828 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-23 02:30:12,585 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-23 02:30:12,739 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-23 02:30:12,749 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-23 02:30:12,750 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-23 02:30:12,750 - __main__ - INFO - 🔍 Начинаю обработку 4 записей
+2025-12-23 02:30:12,751 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-23 02:30:12,753 - src.product_processor - INFO - 📊 Для обработки выбрано: 4 записей (product: 4)
+2025-12-23 02:30:12,753 - src.product_processor - INFO - 🔍 Найдено 4 записей для обработки
+2025-12-23 02:30:12,753 - src.product_processor - INFO - [1/4] Обработка ТОВАРА 58: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 02:30:15,256 - src.product_processor - INFO - [2/4] Обработка ТОВАРА 59: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 02:30:18,261 - src.product_processor - INFO - [3/4] Обработка ТОВАРА 60: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 02:30:20,321 - src.product_processor - INFO - [4/4] Обработка ТОВАРА 57: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 02:30:21,153 - src.product_processor - INFO - ✅ Обработка завершена: 4 успешно, 0 пропущено, 0 с ошибками
+2025-12-23 02:30:21,161 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-23 02:57:42,925 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-23 02:57:42,960 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-23 02:57:42,970 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-23 02:57:42,972 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-23 02:57:42,972 - __main__ - INFO - 🔍 Начинаю обработку 4 записей
+2025-12-23 02:57:42,972 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-23 02:57:42,974 - src.product_processor - INFO - 📊 Для обработки выбрано: 4 записей (product: 4)
+2025-12-23 02:57:42,974 - src.product_processor - INFO - 🔍 Найдено 4 записей для обработки
+2025-12-23 02:57:42,975 - src.product_processor - INFO - [1/4] Обработка ТОВАРА 62: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 02:57:48,558 - src.product_processor - INFO - [2/4] Обработка ТОВАРА 63: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 02:57:50,508 - src.product_processor - INFO - [3/4] Обработка ТОВАРА 64: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 02:57:52,452 - src.product_processor - INFO - [4/4] Обработка ТОВАРА 61: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 02:57:53,319 - src.product_processor - INFO - ✅ Обработка завершена: 4 успешно, 0 пропущено, 0 с ошибками
+2025-12-23 02:57:53,327 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-23 03:00:36,356 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-23 03:00:36,398 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-23 03:00:36,408 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-23 03:00:36,409 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-23 03:00:36,410 - __main__ - INFO - 🔍 Начинаю обработку 40 записей
+2025-12-23 03:00:36,410 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-23 03:00:36,413 - src.product_processor - INFO - 📊 Для обработки выбрано: 40 записей (product: 40)
+2025-12-23 03:00:36,414 - src.product_processor - INFO - 🔍 Найдено 40 записей для обработки
+2025-12-23 03:00:36,414 - src.product_processor - INFO - [1/40] Обработка ТОВАРА 80: https://hello54.ru/catalog/kartkholder-ch05-futlyar-dlya-kar...
+2025-12-23 03:00:41,683 - src.product_processor - INFO - [2/40] Обработка ТОВАРА 71: https://hello54.ru/catalog/kartkholder-ch04-futlyar-dlya-kar...
+2025-12-23 03:00:45,102 - src.product_processor - INFO - [3/40] Обработка ТОВАРА 81: https://hello54.ru/catalog/kartkholder-ch05-futlyar-dlya-kar...
+2025-12-23 03:00:47,221 - src.product_processor - INFO - [4/40] Обработка ТОВАРА 72: https://hello54.ru/catalog/kartkholder-ch04-futlyar-dlya-kar...
+2025-12-23 03:00:50,430 - src.product_processor - INFO - [5/40] Обработка ТОВАРА 70: https://hello54.ru/catalog/kartkholder-ch03-futlyar-dlya-kar...
+2025-12-23 03:00:52,548 - src.product_processor - INFO - [6/40] Обработка ТОВАРА 79: https://hello54.ru/catalog/kartkholder-ch05-futlyar-dlya-kar...
+2025-12-23 03:00:55,712 - src.product_processor - INFO - [7/40] Обработка ТОВАРА 83: https://hello54.ru/catalog/kartkholder-ch07-safemag-futlyar-...
+2025-12-23 03:00:59,800 - src.product_processor - INFO - [8/40] Обработка ТОВАРА 66: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 03:01:02,946 - src.product_processor - INFO - [9/40] Обработка ТОВАРА 69: https://hello54.ru/catalog/kartkholder-ch03-futlyar-dlya-kar...
+2025-12-23 03:01:06,515 - src.product_processor - INFO - [10/40] Обработка ТОВАРА 75: https://hello54.ru/catalog/kartkholder-ch04-futlyar-dlya-kar...
+2025-12-23 03:01:11,392 - src.product_processor - INFO - [11/40] Обработка ТОВАРА 76: https://hello54.ru/catalog/kartkholder-ch04-futlyar-dlya-kar...
+2025-12-23 03:01:13,778 - src.product_processor - INFO - [12/40] Обработка ТОВАРА 77: https://hello54.ru/catalog/kartkholder-ch05-futlyar-dlya-kar...
+2025-12-23 03:01:17,252 - src.product_processor - INFO - [13/40] Обработка ТОВАРА 67: https://hello54.ru/catalog/kartkholder-ch03-futlyar-dlya-kar...
+2025-12-23 03:01:19,660 - src.product_processor - INFO - [14/40] Обработка ТОВАРА 65: https://hello54.ru/catalog/kartkholder-ch02-futlyar-dlya-kar...
+2025-12-23 03:01:21,973 - src.product_processor - INFO - [15/40] Обработка ТОВАРА 68: https://hello54.ru/catalog/kartkholder-ch03-futlyar-dlya-kar...
+2025-12-23 03:01:26,133 - src.product_processor - INFO - [16/40] Обработка ТОВАРА 84: https://hello54.ru/catalog/kartkholder-ch07-safemag-futlyar-...
+2025-12-23 03:01:28,594 - src.product_processor - INFO - [17/40] Обработка ТОВАРА 73: https://hello54.ru/catalog/kartkholder-ch04-futlyar-dlya-kar...
+2025-12-23 03:01:35,610 - src.product_processor - INFO - [18/40] Обработка ТОВАРА 82: https://hello54.ru/catalog/kartkholder-ch07-safemag-futlyar-...
+2025-12-23 03:01:39,027 - src.product_processor - INFO - [19/40] Обработка ТОВАРА 74: https://hello54.ru/catalog/kartkholder-ch04-futlyar-dlya-kar...
+2025-12-23 03:01:41,440 - src.product_processor - INFO - [20/40] Обработка ТОВАРА 85: https://hello54.ru/catalog/kartkholder-ch07-safemag-futlyar-...
+2025-12-23 03:01:44,465 - src.product_processor - INFO - [21/40] Обработка ТОВАРА 86: https://hello54.ru/catalog/kartkholder-ch07-safemag-futlyar-...
+2025-12-23 03:01:46,726 - src.product_processor - INFO - [22/40] Обработка ТОВАРА 87: https://hello54.ru/catalog/kartkholder-ch07-futlyar-dlya-kar...
+2025-12-23 03:01:49,024 - src.product_processor - INFO - [23/40] Обработка ТОВАРА 88: https://hello54.ru/catalog/kartkholder-ch07-futlyar-dlya-kar...
+2025-12-23 03:01:51,213 - src.product_processor - INFO - [24/40] Обработка ТОВАРА 89: https://hello54.ru/catalog/kartkholder-ch07-futlyar-dlya-kar...
+2025-12-23 03:01:53,917 - src.product_processor - INFO - [25/40] Обработка ТОВАРА 90: https://hello54.ru/catalog/kartkholder-ch07-futlyar-dlya-kar...
+2025-12-23 03:01:56,064 - src.product_processor - INFO - [26/40] Обработка ТОВАРА 91: https://hello54.ru/catalog/kartkholder-ch07-futlyar-dlya-kar...
+2025-12-23 03:01:59,199 - src.product_processor - INFO - [27/40] Обработка ТОВАРА 78: https://hello54.ru/catalog/kartkholder-ch05-futlyar-dlya-kar...
+2025-12-23 03:02:01,372 - src.product_processor - INFO - [28/40] Обработка ТОВАРА 146: https://hello54.ru/catalog/kartkholder-finew-safemag-futlyar...
+2025-12-23 03:02:05,069 - src.product_processor - INFO - [29/40] Обработка ТОВАРА 145: https://hello54.ru/catalog/kartkholder-ch09-safemag-pc-trans...
+2025-12-23 03:02:09,501 - src.product_processor - INFO - [30/40] Обработка ТОВАРА 144: https://hello54.ru/catalog/kartkholder-ch09-safemag-pc-trans...
+2025-12-23 03:02:12,228 - src.product_processor - INFO - [31/40] Обработка ТОВАРА 155: https://hello54.ru/catalog/kartkholder-posh-shine-rossyp-kri...
+2025-12-23 03:02:14,759 - src.product_processor - INFO - [32/40] Обработка ТОВАРА 153: https://hello54.ru/catalog/kartkholder-j036-futlyar-dlya-kar...
+2025-12-23 03:02:18,525 - src.product_processor - INFO - [33/40] Обработка ТОВАРА 152: https://hello54.ru/catalog/kartkholder-j019-futlyar-dlya-kar...
+2025-12-23 03:02:21,886 - src.product_processor - INFO - [34/40] Обработка ТОВАРА 151: https://hello54.ru/catalog/kartkholder-j002-futlyar-dlya-kar...
+2025-12-23 03:02:25,367 - src.product_processor - INFO - [35/40] Обработка ТОВАРА 150: https://hello54.ru/catalog/kartkholder-finew-safemag-futlyar...
+2025-12-23 03:02:28,012 - src.product_processor - INFO - [36/40] Обработка ТОВАРА 149: https://hello54.ru/catalog/kartkholder-finew-safemag-futlyar...
+2025-12-23 03:02:33,911 - src.product_processor - INFO - [37/40] Обработка ТОВАРА 148: https://hello54.ru/catalog/kartkholder-finew-safemag-futlyar...
+2025-12-23 03:02:37,965 - src.product_processor - INFO - [38/40] Обработка ТОВАРА 154: https://hello54.ru/catalog/kartkholder-j036-futlyar-dlya-kar...
+2025-12-23 03:02:43,136 - src.product_processor - INFO - [39/40] Обработка ТОВАРА 147: https://hello54.ru/catalog/kartkholder-finew-safemag-futlyar...
+2025-12-23 03:02:47,132 - src.product_processor - INFO - [40/40] Обработка ТОВАРА 143: https://hello54.ru/catalog/kartkholder-ch08-safemag-futlyar-...
+2025-12-23 03:02:49,012 - src.product_processor - INFO - ✅ Обработка завершена: 40 успешно, 0 пропущено, 0 с ошибками
+2025-12-23 03:02:49,021 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 00:56:31,635 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-25 00:56:31,708 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-25 00:56:31,953 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-25 00:56:32,000 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-25 00:56:32,001 - __main__ - INFO - 🔍 Начинаю обработку 1 записей
+2025-12-25 00:56:32,001 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-25 00:56:32,017 - src.product_processor - INFO - 📊 Для обработки выбрано: 1 записей (product: 1)
+2025-12-25 00:56:32,017 - src.product_processor - INFO - 🔍 Найдено 1 записей для обработки
+2025-12-25 00:56:32,018 - src.product_processor - INFO - [1/1] Обработка ТОВАРА 156: https://hello54.ru/catalog/kartkholder-posh-shine-rossyp-kri...
+2025-12-25 00:56:32,996 - src.product_processor - INFO - ✅ Обработка завершена: 1 успешно, 0 пропущено, 0 с ошибками
+2025-12-25 00:56:33,013 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 01:16:53,057 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-25 01:16:53,094 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-25 01:16:53,105 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-25 01:16:53,108 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-25 01:16:53,108 - __main__ - INFO - 🔍 Начинаю обработку 1 записей
+2025-12-25 01:16:53,109 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-25 01:16:53,113 - src.product_processor - INFO - 📊 Для обработки выбрано: 1 записей (product: 1)
+2025-12-25 01:16:53,114 - src.product_processor - INFO - 🔍 Найдено 1 записей для обработки
+2025-12-25 01:16:53,114 - src.product_processor - INFO - [1/1] Обработка ТОВАРА 158: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:16:54,192 - src.product_processor - INFO - ✅ Обработка завершена: 1 успешно, 0 пропущено, 0 с ошибками
+2025-12-25 01:16:54,193 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 01:18:50,631 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium, по умолчанию)
+2025-12-25 01:18:50,666 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-25 01:18:50,675 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-25 01:18:50,677 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-25 01:18:50,685 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 01:21:13,524 - __main__ - INFO - ⚡ Запуск в БЫСТРОМ режиме (без Selenium)
+2025-12-25 01:21:13,559 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-25 01:21:13,569 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-25 01:21:13,570 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-25 01:21:13,571 - __main__ - INFO - 🔍 Начинаю обработку 20 записей
+2025-12-25 01:21:13,571 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-25 01:21:13,573 - src.product_processor - INFO - 📊 Для обработки выбрано: 20 записей (product: 20)
+2025-12-25 01:21:13,573 - src.product_processor - INFO - 🔍 Найдено 20 записей для обработки
+2025-12-25 01:21:13,574 - src.product_processor - INFO - [1/20] Обработка ТОВАРА 160: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:15,685 - src.product_processor - INFO - [2/20] Обработка ТОВАРА 161: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:17,250 - src.product_processor - INFO - [3/20] Обработка ТОВАРА 162: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:18,840 - src.product_processor - INFO - [4/20] Обработка ТОВАРА 163: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:20,411 - src.product_processor - INFO - [5/20] Обработка ТОВАРА 164: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:22,009 - src.product_processor - INFO - [6/20] Обработка ТОВАРА 165: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:23,593 - src.product_processor - INFO - [7/20] Обработка ТОВАРА 166: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:25,182 - src.product_processor - INFO - [8/20] Обработка ТОВАРА 167: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:26,901 - src.product_processor - INFO - [9/20] Обработка ТОВАРА 168: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:28,560 - src.product_processor - INFO - [10/20] Обработка ТОВАРА 169: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:30,216 - src.product_processor - INFO - [11/20] Обработка ТОВАРА 170: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:31,843 - src.product_processor - INFO - [12/20] Обработка ТОВАРА 171: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:33,452 - src.product_processor - INFO - [13/20] Обработка ТОВАРА 172: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:35,117 - src.product_processor - INFO - [14/20] Обработка ТОВАРА 173: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:36,803 - src.product_processor - INFO - [15/20] Обработка ТОВАРА 174: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:38,464 - src.product_processor - INFO - [16/20] Обработка ТОВАРА 175: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:40,127 - src.product_processor - INFO - [17/20] Обработка ТОВАРА 176: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:41,741 - src.product_processor - INFO - [18/20] Обработка ТОВАРА 177: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:43,401 - src.product_processor - INFO - [19/20] Обработка ТОВАРА 178: https://hello54.ru/catalog/sumka-remen-joy-room-jr-cy211-hid...
+2025-12-25 01:21:44,954 - src.product_processor - INFO - [20/20] Обработка ТОВАРА 159: https://hello54.ru/catalog/kartkholder-safemag-futlyar-dlya-...
+2025-12-25 01:21:45,625 - src.product_processor - INFO - ✅ Обработка завершена: 20 успешно, 0 пропущено, 0 с ошибками
+2025-12-25 01:21:45,632 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 01:37:14,187 - __main__ - INFO - 🚀 Запуск в ПОЛНОМ режиме с Selenium (headless)
+2025-12-25 01:37:14,342 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-25 01:37:14,351 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-25 01:37:14,353 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-25 01:37:25,565 - src.selenium_parser - INFO - ✅ Selenium ChromeDriver инициализирован с таймаутами 130с
+2025-12-25 01:37:25,566 - src.product_processor - INFO - ✅ Selenium парсер инициализирован
+2025-12-25 01:37:25,566 - __main__ - INFO - 🔍 Начинаю обработку 2 записей
+2025-12-25 01:37:25,566 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-25 01:37:25,568 - src.product_processor - INFO - 📊 Для обработки выбрано: 2 записей (product: 2)
+2025-12-25 01:37:25,569 - src.product_processor - INFO - 🔍 Найдено 2 записей для обработки
+2025-12-25 01:37:25,569 - src.product_processor - INFO - [1/2] Обработка ТОВАРА 179: https://hello54.ru/catalog/sumka-remen-joy-room-jr-cy211-hid...
+2025-12-25 01:37:25,569 - src.selenium_parser - INFO - 🔍 Selenium прямое извлечение: https://hello54.ru/catalog/sumka-remen-joy-room-jr-cy211-hiding-waist-m-l-black-sky-blue.html
+2025-12-25 01:37:27,674 - src.product_processor - INFO - [2/2] Обработка ТОВАРА 180: https://hello54.ru/catalog/sumka-remen-joy-room-jr-cy211-hid...
+2025-12-25 01:37:27,675 - src.selenium_parser - INFO - 🔍 Selenium прямое извлечение: https://hello54.ru/catalog/sumka-remen-joy-room-jr-cy211-hiding-waist-m-l-black-yellow-neon.html
+2025-12-25 01:37:28,312 - src.product_processor - INFO - ✅ Обработка завершена: 2 успешно, 0 пропущено, 0 с ошибками
+2025-12-25 01:37:30,413 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
+2025-12-25 01:37:30,414 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 01:37:34,513 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=50684): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/93c7f9fbc8122d973441ec9f036f33a1
+2025-12-25 01:37:38,555 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=50684): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/93c7f9fbc8122d973441ec9f036f33a1
+2025-12-25 01:37:42,622 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=50684): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/93c7f9fbc8122d973441ec9f036f33a1
+2025-12-25 01:37:46,655 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
+2025-12-25 01:55:06,449 - __main__ - INFO - 🚀 Запуск в ПОЛНОМ режиме с Selenium (headless)
+2025-12-25 01:55:06,484 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-25 01:55:06,496 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-25 01:55:06,497 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-25 01:55:07,956 - src.selenium_parser - INFO - ✅ Selenium ChromeDriver инициализирован с таймаутами 130с
+2025-12-25 01:55:07,956 - src.product_processor - INFO - ✅ Selenium парсер инициализирован
+2025-12-25 01:55:07,956 - __main__ - INFO - 🔍 Начинаю обработку 2 записей
+2025-12-25 01:55:07,956 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-25 01:55:07,959 - src.product_processor - INFO - 📊 Для обработки выбрано: 2 записей (product: 2)
+2025-12-25 01:55:07,960 - src.product_processor - INFO - 🔍 Найдено 2 записей для обработки
+2025-12-25 01:55:07,960 - src.product_processor - INFO - [1/2] Обработка ТОВАРА 181: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-4-5-...
+2025-12-25 01:55:07,961 - src.selenium_parser - INFO - 🔍 Selenium прямое извлечение: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-4-5-light-blue.html
+2025-12-25 01:55:17,159 - src.product_processor - INFO - [2/2] Обработка ТОВАРА 182: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-0-...
+2025-12-25 01:55:17,160 - src.selenium_parser - INFO - 🔍 Selenium прямое извлечение: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-0-black.html
+2025-12-25 01:55:23,604 - src.product_processor - INFO - ✅ Обработка завершена: 2 успешно, 0 пропущено, 0 с ошибками
+2025-12-25 01:55:25,729 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
+2025-12-25 01:55:25,730 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 01:55:29,838 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51521): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/350000546501393693f18aa4c2197333
+2025-12-25 01:55:33,948 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51521): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/350000546501393693f18aa4c2197333
+2025-12-25 01:55:38,026 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=51521): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/350000546501393693f18aa4c2197333
+2025-12-25 01:55:42,151 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
+2025-12-25 02:17:54,995 - __main__ - INFO - 🚀 Запуск в ПОЛНОМ режиме с Selenium (headless)
+2025-12-25 02:17:55,030 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-25 02:17:55,040 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-25 02:17:55,042 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-25 02:17:56,195 - src.selenium_parser - INFO - ✅ Selenium ChromeDriver инициализирован с таймаутами 130с
+2025-12-25 02:17:56,195 - src.product_processor - INFO - ✅ Selenium парсер инициализирован
+2025-12-25 02:17:56,196 - __main__ - INFO - 🔍 Начинаю обработку 2 записей
+2025-12-25 02:17:56,196 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-25 02:17:56,201 - src.product_processor - INFO - 📊 Для обработки выбрано: 2 записей (product: 2)
+2025-12-25 02:17:56,201 - src.product_processor - INFO - 🔍 Найдено 2 записей для обработки
+2025-12-25 02:17:56,202 - src.product_processor - INFO - [1/2] Обработка ТОВАРА 183: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-0-...
+2025-12-25 02:17:56,202 - src.selenium_parser - INFO - 🔍 Selenium прямое извлечение: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-0-light-blue.html
+2025-12-25 02:17:59,148 - src.product_processor - INFO - [2/2] Обработка ТОВАРА 184: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-5-...
+2025-12-25 02:17:59,149 - src.selenium_parser - INFO - 🔍 Selenium прямое извлечение: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-5-black.html
+2025-12-25 02:18:09,575 - src.product_processor - INFO - ✅ Обработка завершена: 2 успешно, 0 пропущено, 0 с ошибками
+2025-12-25 02:18:11,696 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
+2025-12-25 02:18:11,697 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 02:18:15,776 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=52614): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/796214b9023f8bec4375973f22fe1392
+2025-12-25 02:18:19,849 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=52614): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/796214b9023f8bec4375973f22fe1392
+2025-12-25 02:18:23,942 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=52614): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/796214b9023f8bec4375973f22fe1392
+2025-12-25 02:18:28,067 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
+2025-12-25 02:35:58,667 - __main__ - INFO - 🚀 Запуск в ПОЛНОМ режиме с Selenium (headless)
+2025-12-25 02:35:58,702 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-25 02:35:58,711 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-25 02:35:58,713 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-25 02:35:59,801 - src.selenium_parser - INFO - ✅ Selenium ChromeDriver инициализирован с таймаутами 130с
+2025-12-25 02:35:59,801 - src.product_processor - INFO - ✅ Selenium парсер инициализирован
+2025-12-25 02:35:59,802 - __main__ - INFO - 🔍 Начинаю обработку 2 записей
+2025-12-25 02:35:59,802 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-25 02:35:59,807 - src.product_processor - INFO - 📊 Для обработки выбрано: 2 записей (product: 2)
+2025-12-25 02:35:59,808 - src.product_processor - INFO - 🔍 Найдено 2 записей для обработки
+2025-12-25 02:35:59,808 - src.product_processor - INFO - [1/2] Обработка ТОВАРА 185: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-5-...
+2025-12-25 02:35:59,809 - src.selenium_parser - INFO - 🔍 Selenium прямое извлечение: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-5-light-blue.html
+2025-12-25 02:36:02,087 - src.product_processor - INFO - [2/2] Обработка ТОВАРА 186: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-5-...
+2025-12-25 02:36:02,088 - src.selenium_parser - INFO - 🔍 Selenium прямое извлечение: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-5-gold.html
+2025-12-25 02:36:03,242 - src.product_processor - INFO - ✅ Обработка завершена: 2 успешно, 0 пропущено, 0 с ошибками
+2025-12-25 02:36:05,362 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
+2025-12-25 02:36:05,363 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 02:36:09,471 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=53533): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/24463aba59045b0e7842e853b736bae4
+2025-12-25 02:36:13,580 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=53533): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/24463aba59045b0e7842e853b736bae4
+2025-12-25 02:36:17,678 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=53533): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/24463aba59045b0e7842e853b736bae4
+2025-12-25 02:36:21,791 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
+2025-12-25 02:47:10,633 - __main__ - INFO - 🚀 Запуск в ПОЛНОМ режиме с Selenium (headless)
+2025-12-25 02:47:10,668 - src.product_processor - INFO - ✅ Подключение к PostgreSQL успешно
+2025-12-25 02:47:10,678 - src.product_processor - INFO - ✅ Все необходимые колонки уже существуют
+2025-12-25 02:47:10,679 - src.product_processor - INFO - ✅ Все URL уже классифицированы
+2025-12-25 02:47:13,723 - src.selenium_parser - INFO - ✅ Selenium ChromeDriver инициализирован с таймаутами 130с
+2025-12-25 02:47:13,723 - src.product_processor - INFO - ✅ Selenium парсер инициализирован
+2025-12-25 02:47:13,724 - __main__ - INFO - 🔍 Начинаю обработку 1 записей
+2025-12-25 02:47:13,724 - __main__ - INFO - ⏱️  Задержка между запросами: 1.0 сек
+2025-12-25 02:47:13,729 - src.product_processor - INFO - 📊 Для обработки выбрано: 1 записей (product: 1)
+2025-12-25 02:47:13,729 - src.product_processor - INFO - 🔍 Найдено 1 записей для обработки
+2025-12-25 02:47:13,730 - src.product_processor - INFO - [1/1] Обработка ТОВАРА 187: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-5-...
+2025-12-25 02:47:13,730 - src.selenium_parser - INFO - 🔍 Selenium прямое извлечение: https://hello54.ru/catalog/universalnyy-chekhol-knizhka-5-5-pink.html
+2025-12-25 02:47:15,080 - src.selenium_characteristics - INFO - 🔍 Начинаю поиск характеристик...
+2025-12-25 02:47:16,623 - src.selenium_characteristics - INFO - ✅ Найден блок характеристик: b-properties
+2025-12-25 02:47:17,214 - src.selenium_characteristics - INFO - 📊 Найдено элементов характеристик: 5
+2025-12-25 02:47:17,433 - src.selenium_characteristics - INFO - ✅ ИТОГО собрано характеристик: 5
+2025-12-25 02:47:17,433 - src.selenium_parser - INFO - ✅ Собрано 5 характеристик
+2025-12-25 02:47:17,438 - src.product_processor - INFO - ✅ Обработка завершена: 1 успешно, 0 пропущено, 0 с ошибками
+2025-12-25 02:47:19,542 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
+2025-12-25 02:47:19,543 - src.product_processor - INFO - 🔌 Соединение с PostgreSQL закрыто
+2025-12-25 02:47:23,651 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=53979): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/92f2b61847a61bcb7de689c5a8f7a9f5
+2025-12-25 02:47:27,776 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=53979): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/92f2b61847a61bcb7de689c5a8f7a9f5
+2025-12-25 02:47:31,901 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=53979): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение")': /session/92f2b61847a61bcb7de689c5a8f7a9f5
+2025-12-25 02:47:36,010 - src.selenium_parser - INFO - 🔌 Selenium браузер закрыт
