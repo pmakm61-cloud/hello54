@@ -1,0 +1,146 @@
+<!-- hello54_crm/templates/index.html -->
+{% extends "layout.html" %}
+
+{% block title %}Товары - Hello54 CRM{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>📦 Товары в базе</h1>
+    
+    <!-- Быстрые действия -->
+    <div class="quick-actions">
+        <button onclick="parseBatch(10)">🔄 Спарсить 10 товаров</button>
+        <button onclick="downloadBatchImages(10)">🖼️ Загрузить 10 картинок</button>
+        <button onclick="location.href='/stats'">📊 Статистика</button>
+    </div>
+    
+    <!-- Статистика сверху -->
+    {% if stats %}
+    <div class="stats-summary">
+        Всего: {{ stats.total_products }} | 
+        Успешно: {{ stats.parsed_success }} | 
+        Ошибок: {{ stats.parsed_failed }} | 
+        Ожидают: {{ stats.pending }} |
+        С картинками: {{ stats.has_local_image }}
+    </div>
+    {% endif %}
+    
+    <!-- Таблица товаров -->
+    <table class="products-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Название</th>
+                <th>Цена</th>
+                <th>Артикул</th>
+                <th>Статус</th>
+                <th>Картинка</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>
+                    <a href="/product/{{ product.id }}" title="{{ product.prod_name }}">
+                        {{ product.prod_name|default("Нет названия", true)|truncate(40) }}
+                    </a>
+                </td>
+                <td class="price">
+                    {% if product.prod_price_new %}
+                        {{ product.prod_price_new }} ₽
+                        {% if product.prod_price_old %}
+                            <del>{{ product.prod_price_old }} ₽</del>
+                        {% endif %}
+                    {% else %}
+                        —
+                    {% endif %}
+                </td>
+                <td>{{ product.prod_article|default("—", true) }}</td>
+                <td class="status status-{{ product.parse_status|default('pending', true) }}">
+                    {{ product.parse_status|default("pending", true) }}
+                </td>
+                <td class="image-status">
+                    {% if product.img_local_path %}
+                        ✅
+                    {% elif product.prod_img_url %}
+                        🔗
+                    {% else %}
+                        ❌
+                    {% endif %}
+                </td>
+                <td class="actions">
+                    <button onclick="parseProduct({{ product.id }})" 
+                            class="btn-small" title="Парсить">🔄</button>
+                    <button onclick="downloadImage({{ product.id }})" 
+                            class="btn-small" title="Картинка">🖼️</button>
+                    <button onclick="location.href='/product/{{ product.id }}'" 
+                            class="btn-small" title="Подробно">👁️</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <!-- Пагинация -->
+    {% if total > limit %}
+    <div class="pagination">
+        {% if offset > 0 %}
+            <a href="/?limit={{ limit }}&offset={{ offset - limit }}">← Назад</a>
+        {% endif %}
+        
+        <span>Страница {{ (offset / limit)|int + 1 }} из {{ (total / limit)|round(0, 'ceil')|int }}</span>
+        
+        {% if offset + limit < total %}
+            <a href="/?limit={{ limit }}&offset={{ offset + limit }}">Вперед →</a>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+
+<script>
+// Функции для взаимодействия с API
+async function parseProduct(productId) {
+    const response = await fetch(`/api/parser/parse/${productId}`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'}
+    });
+    const result = await response.json();
+    showNotification(result.success ? 'Парсинг запущен' : 'Ошибка', result.success);
+}
+
+async function parseBatch(count) {
+    const response = await fetch(`/api/parser/parse-batch?count=${count}`, {
+        method: 'POST'
+    });
+    const result = await response.json();
+    showNotification(`Парсинг ${count} товаров запущен`, result.success);
+}
+
+async function downloadImage(productId) {
+    const response = await fetch(`/api/images/download/${productId}`, {
+        method: 'POST'
+    });
+    const result = await response.json();
+    showNotification('Загрузка картинки запущена', result.success);
+}
+
+async function downloadBatchImages(count) {
+    const response = await fetch(`/api/images/download-batch?count=${count}`, {
+        method: 'POST'
+    });
+    const result = await response.json();
+    showNotification(`Загрузка ${count} картинок запущена`, result.success);
+}
+
+function showNotification(message, isSuccess = true) {
+    const notification = document.createElement('div');
+    notification.className = `notification ${isSuccess ? 'success' : 'error'}`;
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => notification.remove(), 3000);
+}
+</script>
+{% endblock %}

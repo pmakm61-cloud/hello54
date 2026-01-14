@@ -1,0 +1,133 @@
+<!-- hello54_crm/templates/product_detail.html -->
+{% extends "layout.html" %}
+
+{% block title %}{{ product.prod_name|default("Товар") }} - Hello54 CRM{% endblock %}
+
+{% block content %}
+<div class="container">
+    <a href="/" class="back-link">← Назад к списку</a>
+    
+    <div class="product-detail">
+        <div class="product-header">
+            <h1>{{ product.prod_name|default("Товар без названия") }}</h1>
+            <span class="product-id">ID: {{ product.id }}</span>
+        </div>
+        
+        <!-- Основная информация -->
+        <div class="product-info-grid">
+            <div class="info-card">
+                <h3>💰 Цены</h3>
+                <div class="price-block">
+                    {% if product.prod_price_new %}
+                        <div class="current-price">{{ product.prod_price_new }} ₽</div>
+                        {% if product.prod_price_old %}
+                            <div class="old-price">{{ product.prod_price_old }} ₽</div>
+                        {% endif %}
+                    {% else %}
+                        <div class="no-price">Цена не указана</div>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <h3>📋 Детали</h3>
+                <ul>
+                    <li><strong>Артикул:</strong> {{ product.prod_article|default("—") }}</li>
+                    <li><strong>Статус:</strong> 
+                        <span class="status-badge status-{{ product.parse_status|default('pending', true) }}">
+                            {{ product.parse_status|default("pending", true) }}
+                        </span>
+                    </li>
+                    <li><strong>Создан:</strong> {{ product.created_at|default("—") }}</li>
+                    <li><strong>Обновлен:</strong> {{ product.updated_at|default("—") }}</li>
+                </ul>
+            </div>
+            
+            <div class="info-card">
+                <h3>🖼️ Изображение</h3>
+                {% if product.img_local_path %}
+                    <div class="image-preview">
+                        <img src="file://{{ product.img_local_path }}" 
+                             alt="{{ product.prod_name }}"
+                             onerror="this.style.display='none'">
+                        <p>{{ product.img_local_path }}</p>
+                    </div>
+                {% elif product.prod_img_url %}
+                    <p>URL: <a href="{{ product.prod_img_url }}" target="_blank">{{ product.prod_img_url|truncate(40) }}</a></p>
+                    <button onclick="downloadImage({{ product.id }})" class="btn">📥 Загрузить локально</button>
+                {% else %}
+                    <p>Нет изображения</p>
+                {% endif %}
+            </div>
+        </div>
+        
+        <!-- Действия -->
+        <div class="action-panel">
+            <h3>⚡ Быстрые действия</h3>
+            <div class="action-buttons">
+                <button onclick="parseProduct({{ product.id }})" class="btn btn-primary">
+                    🔄 Парсить заново (Selenium)
+                </button>
+                <button onclick="parseProductFast({{ product.id }})" class="btn">
+                    ⚡ Парсить быстро (без Selenium)
+                </button>
+                {% if not product.img_local_path and product.prod_img_url %}
+                    <button onclick="downloadImage({{ product.id }})" class="btn btn-success">
+                        🖼️ Скачать картинку
+                    </button>
+                {% endif %}
+            </div>
+        </div>
+        
+        <!-- URL и мета-информация -->
+        <div class="url-info">
+            <h3>🔗 Ссылки</h3>
+            <p><strong>URL товара:</strong> <a href="{{ product.url }}" target="_blank">{{ product.url|truncate(80) }}</a></p>
+            {% if product.prod_img_url %}
+                <p><strong>URL картинки:</strong> <a href="{{ product.prod_img_url }}" target="_blank">{{ product.prod_img_url|truncate(80) }}</a></p>
+            {% endif %}
+        </div>
+        
+        <!-- Характеристики (если есть) -->
+        {% if product.prod_characteristics %}
+        <div class="characteristics">
+            <h3>📝 Характеристики</h3>
+            <table class="char-table">
+                {% for key, value in product.prod_characteristics.items() %}
+                <tr>
+                    <th>{{ key }}</th>
+                    <td>{{ value }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<script>
+async function parseProduct(productId) {
+    const response = await fetch(`/api/parser/parse/${productId}?use_selenium=true`, {
+        method: 'POST'
+    });
+    const result = await response.json();
+    alert(result.success ? '✅ Парсинг запущен' : '❌ Ошибка: ' + result.error);
+}
+
+async function parseProductFast(productId) {
+    const response = await fetch(`/api/parser/parse/${productId}?use_selenium=false`, {
+        method: 'POST'
+    });
+    const result = await response.json();
+    alert(result.success ? '✅ Быстрый парсинг запущен' : '❌ Ошибка');
+}
+
+async function downloadImage(productId) {
+    const response = await fetch(`/api/images/download/${productId}`, {
+        method: 'POST'
+    });
+    const result = await response.json();
+    alert(result.success ? '✅ Загрузка картинки запущена' : '❌ Ошибка');
+}
+</script>
+{% endblock %}
