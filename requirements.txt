@@ -1,9 +1,43 @@
 # requirements.txt
-requests>=2.28.0
-beautifulsoup4>=4.11.0
-psycopg2-binary>=2.9.0
-pandas>=1.5.0
-python-dotenv>=0.21.0
+
+# ======================
+# ОСНОВНЫЕ ЗАВИСИМОСТИ
+# ======================
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+jinja2==3.1.2
+
+# ======================
+# ПАРСИНГ И СБОР ДАННЫХ
+# ======================
+aiohttp==3.9.1
+beautifulsoup4==4.12.2
+selenium==4.15.2
+webdriver-manager==4.0.1
+requests==2.31.0
+lxml==4.9.3
+pandas==2.1.4
+numpy==1.26.2
+openpyxl==3.1.2  # для Excel файлов
 tabulate>=0.9.0
-selenium>=4.15.0
-webdriver-manager>=4.0.0
+# ======================
+# УТИЛИТЫ И ИНСТРУМЕНТЫ
+# ======================
+python-dateutil==2.8.2
+pytz==2023.3.post1
+loguru==0.7.2
+typing-extensions==4.8.0
+click==8.1.7
+
+# ======================
+# ТЕСТИРОВАНИЕ (опционально)
+# ======================
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.1
